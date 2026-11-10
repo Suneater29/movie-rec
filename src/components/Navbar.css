@@ -2,26 +2,44 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 1rem;
   padding: 1rem 2rem;
-  background-color: #161616;
-  color: white;
+  border-bottom: 1px solid #2d2d2d;
+  background: #181818;
 }
 
 .navbar a {
-  color: white;
+  color: #eee;
   text-decoration: none;
 }
 
 .navbar-brand {
   font-size: 1.25rem;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 .navbar-links {
   display: flex;
-  gap: 1.5rem;
+  flex-wrap: wrap;
+  gap: 1.25rem;
 }
 
 .navbar-links a:hover {
   color: #f5c518;
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .navbar-links {
+    gap: 0.75rem 1rem;
+  }
+
+  .home-page {
+    padding: 1.25rem;
+  }
 }

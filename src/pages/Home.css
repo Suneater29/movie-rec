@@ -1,0 +1,30 @@
+.home-page {
+  width: min(1200px, 100%);
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.home-page h1 {
+  margin: 0 0 1.5rem;
+  font-size: clamp(2rem, 5vw, 3rem);
+}
+
+.home-search {
+  display: block;
+  width: min(100%, 420px);
+  margin-bottom: 2rem;
+  padding: 0.8rem 1rem;
+  border: 1px solid #555;
+  border-radius: 8px;
+  background: #202020;
+  color: white;
+}
+
+.home-search::placeholder {
+  color: #aaa;
+}
+
+.home-search:focus {
+  border-color: #f5c518;
+  outline: 2px solid #f5c518;
+}

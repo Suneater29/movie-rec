@@ -1,0 +1,14 @@
+.pick-page {
+  width: min(1200px, 100%);
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.pick-page h1 {
+  margin-bottom: 0.5rem;
+}
+
+.pick-count {
+  color: #f5c518;
+  font-weight: 700;
+}
