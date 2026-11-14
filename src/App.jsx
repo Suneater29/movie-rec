@@ -6,6 +6,7 @@ import Pick from "./pages/Pick";
 import Recommendations from "./pages/Recommendations";
 import Login from "./pages/Login";
 import Navbar from "./components/Navbar";
+import { Link } from "react-router";
 
 function App() {
   const [selectedMovieIds, setSelectedMovieIds] = useState([]);
@@ -40,6 +41,15 @@ function App() {
         />
         <Route path="/recommendations" element={<Recommendations selectedMovieIds={selectedMovieIds} />} />
         <Route path="/login" element={<Login />} />
+        <Route 
+        path="*"
+        element={
+          <main className="home-page">
+            <h1>Page not found</h1>
+            <Link to="/">Go Back Home</Link>
+          </main>
+        }
+        />
       </Routes>
     </BrowserRouter>
   );
